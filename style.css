@@ -127,11 +127,13 @@ ul li a:hover {
 
 }
 
-
+/* ================= TABLET ================= */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 70px;
+    gap: 30px;
+    padding-bottom: 80px;
   }
 
   .mainText h1 {
@@ -150,40 +152,46 @@ ul li a:hover {
   }
 
   .mainText button {
-    width: 140px;
-    height: 50px;
+    width: 145px;
+    height: 52px;
     font-size: 18px;
-    margin: 20px auto 0;
+    margin: 22px auto 0;
     display: block;
   }
 
   #main_image {
-    width: 250px;
-    margin-top: 20px;
+    width: 260px;
   }
 }
 
+/* ================= MOBILE ================= */
 @media (max-width: 480px) {
+  .main {
+    margin-top: 50px;
+    padding-bottom: 70px;
+  }
+
   .mainText h1 {
     font-size: 36px;
   }
 
   .mainText h3 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .mainText p {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .mainText button {
     width: 130px;
-    height: 45px;
+    height: 46px;
     font-size: 16px;
   }
 
   #main_image {
-    width: 240px;
+    width: 230px;
+    margin-top: 2rem;
   }
 }
 
@@ -291,21 +299,114 @@ ul li a:hover {
   }
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .about-wrapper {
-    flex-direction: column;
-    text-align: center;
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+  .about-me {
+    padding: 80px 6%;
   }
 
-  .about-image img {
-    max-width: 300px;
+  .about-wrapper {
+    gap: 60px;
   }
 
   .about-content h2 {
-    font-size: 2.2rem;
+    font-size: 2.6rem;
+  }
+
+  .about-content p {
+    font-size: 1.1rem;
+  }
+
+  /* Softer animations */
+  .animate-left {
+    transform: translateX(-50px);
+  }
+
+  .animate-right {
+    transform: translateX(50px);
   }
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .about-me {
+    padding: 60px 5%;
+    text-align: center;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about-image img {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .about-content h2 {
+    font-size: 2.1rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .about-btn {
+    margin-top: 22px;
+    padding: 10px 22px;
+  }
+
+  /* Disable hover scaling on touch devices */
+  .about-image img:hover {
+    transform: none;
+  }
+
+  /* Mobile-friendly animation distance */
+  .animate-left {
+    transform: translateY(40px);
+    animation: slideUp 1.2s ease forwards;
+  }
+
+  .animate-right {
+    transform: translateY(40px);
+    animation: slideUp 1.2s ease forwards;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+
+  .about-me {
+    padding: 50px 4%;
+  }
+
+  .about-image img {
+    max-width: 240px;
+  }
+
+  .about-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Mobile animation */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 
 /* ///////////////////////////////////////////////////////////////////////////// */
 
@@ -325,6 +426,7 @@ ul li a:hover {
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 4rem;
+
 }
 
 /* ================= FLIP CARD ================= */
@@ -433,26 +535,62 @@ ul li a:hover {
   background-color: #00c4c4;
 }
 
-/* ================= RESPONSIVE ================= */
+/* ================= RESPONSIVE FIX ================= */
 
-@media (max-width: 768px) {
-  .flip-card:hover .flip-inner {
-    transform: none;
+/* Tablets */
+@media (max-width: 992px) {
+
+  #projectH1 h1 {
+    font-size: 52px;
   }
 
   .myProjects {
-    margin-right: 2rem;
+    margin: 0 2rem;
+    gap: 20px;
+  }
 
+  .projectsCard {
+    width: 300px;
+    height: 300px;
+  }
+
+  .flip-front img {
+    height: 180px;
   }
 }
 
+/* Mobile & Touch Devices */
+@media (max-width: 768px) {
+
+  .flip-back {
+    display: flex;
+  }
+
+  .flip-front,
+  .flip-back {
+    position: absolute;
+    height: 100%;
+  }
+}
+
+/* Small Mobile */
 @media (max-width: 480px) {
-  .myProjects {
-    margin-left: 1.2rem;
 
-    flex-direction: column;
-    align-items: center;
+  #projectH1 h1 {
+    font-size: 40px;
+  }
 
+  .projectsCard {
+    max-width: 95%;
+    margin: 18px auto;
+  }
+
+  .flip-front img {
+    height: 170px;
+  }
+
+  .flip-front p {
+    font-size: 0.95rem;
   }
 }
 
@@ -880,6 +1018,7 @@ strong {
    TABLET RESPONSIVE
 =========================== */
 @media (max-width: 768px) {
+
   .section-header h1 {
     font-size: 1.9rem;
   }
@@ -889,7 +1028,7 @@ strong {
   }
 
   .skill-icons {
-    gap: 35px;
+    gap: 32px;
   }
 
   .skill-circle,
@@ -905,19 +1044,25 @@ strong {
 }
 
 /* ===========================
-   MOBILE RESPONSIVE
+   MOBILE RESPONSIVE (FIXED)
 =========================== */
 @media (max-width: 480px) {
+
   .skills-section {
-    padding: 40px 15px;
+    padding: 40px 12px;
+    text-align: center;
   }
 
   .section-header h1 {
     font-size: 1.6rem;
   }
 
+  .skills-category {
+    margin: 30px auto;
+  }
+
   .skill-icons {
-    gap: 25px;
+    gap: 22px;
   }
 
   .skill-circle,
@@ -928,8 +1073,15 @@ strong {
 
   .skill-back,
   .skill-circle .skill-name {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
   }
+
+  /* Disable hover dependency on mobile
+  .skill-circle:hover img,
+  .skill-circle:hover .skill-name,
+  .skill-flip:hover .skill-flip-inner {
+    all: unset;
+  } */
 }
 
 
@@ -1057,6 +1209,7 @@ strong {
   margin-top: 10px;
   font-weight: bold;
   color: #00c4c4;
+  font-size: x-large;
 }
 
 
@@ -1068,7 +1221,8 @@ strong {
     margin-right: 10px;
     width: 100%;
     max-width: 100%;
-    mar
+    
+    
   }
 
   #education .timeline>.container {
