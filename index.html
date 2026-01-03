@@ -1,285 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="sb.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Dancing+Script:wght@700&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto&family=Roboto+Condensed:wght@700&family=Roboto+Slab&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/x-icon" href="sb.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Antic&display=swap" rel="stylesheet">
+
+
 
 </head>
+
 <body>
-      <div class="container">
-        
-<nav>
-  <ul id="menu">
-    <li><a href="#main">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#skills"> Skills</a></li>
-    <li><a href="#projects"> Projects</a></li>
-    <li><a href="#internships">Internships</a></li>
-    <li><a href="#contact">Contact Me</a></li>
+  <div class="container">
 
-  </ul>
-  <div id="hamburger">
-    <div class="bar"></div>
-    <div class="bar"></div>
-    <div class="bar"></div>
-  </div>
-</nav>
+    <nav>
+      <ul id="menu">
+        <li><a href="#main">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills"> Skills</a></li>
+        <li><a href="#projects"> Projects</a></li>
+        <li><a href="#internships">Internships</a></li>
+        <li><a href="#contact">Contact Me</a></li>
 
-        <div class="main" id="main">
-            <div class="mainText">
-                <h3>Hello I am</h3>
-                <h1>Sarvesh <span>Bamane</span></h1>
-                <p>Passionate Computer Science Graduate &  Aspiring Full-Stack <br>Developer.    
-                    
-                   
-                </p>
-                <button id="cvBtn" > Download Resume</button>
-            </div>
-            <img src="Assets/s.png" alt="" id="main_image">
+      </ul>
+      <div id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    <div class="main" id="main">
+      <div class="mainText ">
+        <h3>Hello, I am</h3>
+        <h1>Sarvesh <span>Bamane</span></h1>
+        <p>
+          Passionate Computer Science Graduate & Aspiring &nbsp;&nbsp;<br>
+          <strong>
+            <span id="typewriter"></span>
+            <br>
+            <br>
+          </strong>
+
+        </p>
+        <button id="cvBtn"> View Resume</button>
+      </div>
+      <img src="Assets/sarvesh.png" alt="Sarvesh Bamane" id="main_image" class="image-animate">
+
+    </div>
+
+
+
+
+    <section class="about-me" id="about">
+      <div class="about-wrapper">
+
+        <!-- LEFT IMAGE -->
+        <div class="about-image animate-left">
+          <img src="Assets/aboutImg.jpg" alt="Sarvesh Bamane">
         </div>
 
-    <div class="about-me" id="about">
-    <div class="head">
-        <h1 id="aboutH1">About <span>Me</span></h1>
-    </div>
-    <div class="about">
-        <img src="Assets/S_B.png" alt="">
-        <div class="aboutText">
-            <p>
-                My name is <span>Sarvesh Ganesh Bamane</span>, and I am recently completed  B.Tech in <span>Computer Science and Engineering</span> at <span>ADCET</span>, Maharashtra, India. I am a <span>motivated</span> and <span>enthusiastic</span> individual with a solid foundation in <span>programming languages</span>. I am actively seeking opportunities where I can <span>apply my skills</span>, <span>learn continuously</span>, and contribute to <span>innovative</span> and <span>impactful projects</span>. You can reach me at <span>+91-9511776714</span> or via email at <span>sarveshbamane35@gmail.com</span>.
-            </p>
+        <!-- RIGHT TEXT -->
+        <div class="about-content animate-right">
+          <h2>About <span>Me</span></h2>
 
+
+          <p>
+            My name is <span>Sarvesh Ganesh Bamane</span>. I recently completed my
+            B.Tech in <span>Computer Science and Engineering</span> from
+            <span>ADCET</span>, Maharashtra, India.
+          </p>
+
+          <p>
+            I am an <span>entry-level</span>, <span>motivated</span>, and <span>enthusiastic</span>
+            <span>Java Full Stack Developer</span> with a strong foundation in
+            <span>Core Java</span> and <span>full-stack development</span>. I actively seek
+            opportunities to <span>apply my skills</span>, <span>learn continuously</span>, and
+            contribute to <span>impactful software projects</span>.
+          </p>
+
+
+          <a href="#contact" class="about-btn">Contact Me</a>
         </div>
-    </div>
-</div>
 
-<div class="education-section" id="education">
-  <h2 class="section-title">Education</h2>
-  <div class="timeline">
-    
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>B.Tech in Computer Science</h3>
-        <p class="institute">Annasaheb Dange College of Engineering and Technology, Ashta</p>
-        <p class="duration">Dec 2021 - July 2025 </p>
-        <p class="location">Ashta, Maharashtra</p>
+      </div>
+    </section>
 
-        <p class="highlight">CGPA: 7.68</p>
+    <div class="education-section section-3d" id="education">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+
+        <!-- SSC -->
+        <div class="container left">
+          <div class="content">
+            <h3>SSC <br>(2019)</h3>
+            <p class="institute">Vidyamandir High School & Jr. College</p>
+            <p class="location">Islampur, Maharashtra</p>
+            <p class="highlight">75.20%</p>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="container right">
+          <div class="content">
+            <h3>HSC <br>(2021)</h3>
+            <p class="institute">Vidyamandir High School & Jr. College</p>
+            <p class="location">Islampur, Maharashtra</p>
+            <p class="highlight">86.33%</p>
+          </div>
+        </div>
+
+        <!-- B.Tech -->
+        <div class="container left">
+          <div class="content">
+            <h3>B.Tech – Computer Science and Engineering <br> (2025)</h3>
+            <p class="institute">Annasaheb Dange College of Engineering & Technology</p>
+            <p class="location">Ashta, Maharashtra</p>
+            <p class="highlight">CGPA: 7.68</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>Higher Secondary Certificate (HSC)</h3>
-        <p class="institute">Vidyamandir High School and Junior College, Islampur</p>
-        <p class="duration">June 2020 - Aug 2021</p>
-        <p class="location">Islampur, Maharashtra</p>
-        <p class="highlight">Percentage: 86.33%</p>
-      </div>
-    </div>
-
-    <div class="timeline-item">
-      <div class="timeline-content">
-        <h3>Secondary School Certificate (SSC)</h3>
-        <p class="institute">Vidyamandir High School and Junior College, Islampur</p>
-        <p class="duration">June 2018 - Mar 2019 </p>
-        <p class="location">Islampur, Maharashtra</p>
-        <p class="highlight">Percentage: 75.20%</p>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 
-<div class="skills-section" id="skills">
-    <div class="section-header">
+
+
+    <div class="skills-section section-3d" id="skills">
+      <div class="section-header">
         <h1 id="skills-id"> <span>Skills</span></h1>
-    </div>
+      </div>
 
-    <div class="skills-category" id="programming-languages">
+      <div class="skills-category" id="programming-languages">
         <h2>Programming Languages</h2>
         <div class="skill-icons">
-            <img src="Assets/cpp.png" alt="C++">
-            <img src="Assets/python.png" alt="Python">
-            <img src="Assets/java.png" alt="Java">
-            <img src="Assets/js.png" alt="JavaScript">
-        </div>
-    </div>
 
-    <div class="skills-category" id="web-development">
-        <h2>Web Development</h2>
-        <div class="skill-icons">
-            <img src="Assets/html.png" alt="HTML">
-            <img src="Assets/css.png" alt="CSS">
-            <img src="Assets/react.png" alt="React">
-        </div>
-    </div>
-
-    <div class="skills-category" id="database-skills">
-        <h2>Database</h2>
-        <div class="skill-icons">
-            <img src="Assets/sql.png" alt="SQL">
-            <img src="Assets/mongodb.png" alt="MongoDB">
-        </div>
-    </div>
-</div>
-        
-
-        <div class="project-section" id="projects">
-            <div class="head">
-                <h1 id="projectH1"> <span>Projects</span></h1>
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/java.jpg" alt="Java">
+              </div>
+              <div class="skill-back">
+                Java
+              </div>
             </div>
-            <div class="myProjects">
-                <div class="projectsCard">
-                    <img src="Assets/portfolio.png" alt="Personal Portfolio Website">
-                    <p>Personal Portfolio Website</p>
-                    <a href="https://new-personal-portfolio-website.vercel.app/" target="_blank">Checkout</a>
-                </div>
+          </div>
 
-                 <div class="projectsCard">
-                    <img src="Assets/505.png" alt="505 camphor Website">
-                    <p>505 camphor Website</p>
-                    <a href="https://505-camphor.vercel.app/" target="_blank">Checkout</a>
-                </div>
-
-                <div class="projectsCard">
-                    <img src="Assets/MRS.png" alt="Movie Recommendation System">
-                    <p>Movie Recommendation System</p>
-                    <a href="https://github.com/SarveshGBamane/Movie-Recommendation-System" target="_blank" >Checkout</a>
-                </div>
-                
-                <div class="projectsCard">
-                    <img src="Assets/sugarcane.png" alt="Expense Tracker">
-                    <p> CNN Solution for Sugarcane Disease Detection System</p>
-                    <a href="" target="_blank">Checkout</a>
-                </div>
-               
-                <div class="projectsCard">
-                    <img src="Assets/Expense.png" alt="Expense Tracker">
-                    <p>Expense Tracker</p>
-                    <a href="https://expense-tracker-tgv8.vercel.app/" target="_blank">Checkout</a>
-                </div>
-               
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/js.jpg" alt="JavaScript">
+              </div>
+              <div class="skill-back">
+                JavaScript
+              </div>
             </div>
-        </div>
-        
-        <div class="internships-section" id="internships">
-            <div class="head">
-                <h1 id="internshipH1"><span>Internships</span></h1>
+          </div>
+
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/ts.jpg" alt="TypeScript">
+              </div>
+              <div class="skill-back">
+                TypeScript
+              </div>
             </div>
-            <div class="internship">
-                
-                  <div class="card">
-                        <i class="fa-solid fa-laptop-code"></i>
-                        <h3>Web Full Stack Developer Virtual Internship</h3>
-                        <p id="intenShipProvider">Supported by AICTE and EduSkills (April – June 2025)</p>
-                        <p>
-                            Successfully completed a 10-week internship focusing on web development. 
-                            Learned full-stack concepts including front-end, back-end, and database 
-                            integration. Worked on real-world projects to build scalable web applications.
-                        </p>
-                        <button id="internshipBtn1">    Download Certificate</button>
-                    </div>
-
-                  <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>AI-ML Virtual Internship</h3>
-                    <p id="intenShipProvider">Supported by AICTE and EduSkills (January – March 2025)
-
-                    </p>
-                     <p>Learned about artificial intelligence and machine learning fundamentals. Worked on practical applications and gained hands-on experience in model development, training, and deployment using real-world datasets.</p>
-                     <button id="internshipBtn2" > Download Certificate</button>
-
-                </div>
-                
-
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>C++ Programming</h3>
-                    <p id="intenShipProvider">CodSoft Company (Apr 2024 – May 2024)</p>
-                     <p>Created a 'To-Do List' program in C++. Implemented task management with features for adding, deleting, and updating tasks using Object-Oriented Programming (OOP).</p>
-                     <button id="internshipBtn3" > Download Certificate</button>
-
-                </div>
-
-                <div class="card">
-                    <i class="fa-solid fa-code"></i>
-                    <h3>Zscaler Zero Trust Cloud Security Virtual Internship</h3>
-                    <p id="intenShipProvider">Supported by AICTE and EduSkills (July – September 2024)</p>
-                     <p>Learned about Zero Trust principles, cloud security, and Zscaler platform. Worked on identity and access management, threat detection, and network security.</p>
-                     <button id="internshipBtn4" >Download Certificate</button>
-
-                </div>
-
-                
-            </div>
-        </div>
-        
-  <div class="contact-section" id="contact">
-  <div class="contact-heading">
-    <h1>Contact<span> Me</span></h1>
-  </div>
-  <div class="contact-card">
-   <div class="contact-item">
-  <p>
-    <strong>Phone:</strong>
-    <a href="tel:+919511776714">+91-9511776714</a>
-  </p>
-</div>
-
-
-
-
-    <div class="contact-item">
-      <p>
-        <strong>WhatsApp:</strong>
-        <a href="https://wa.me/919511776714?text=Hello%20Sarvesh!" target="_blank">
-          Chat on WhatsApp
-        </a>
-      </p>
-    </div>
-
-    <div class="contact-item">
-      <p>
-        <strong>Email:</strong>
-        <a href="mailto:sarveshbamane35@gmail.com?subject=Hello%20Sarvesh&body=I%20would%20like%20to%20connect%20with%20you.">
-          sarveshbamane35@gmail.com
-        </a>
-      </p>
-    </div>
-
-    <!-- LinkedIn -->
-    <div class="contact-item">
-      <p>
-        <strong>LinkedIn:</strong>
-        <a href="https://www.linkedin.com/in/sarvesh-bamane-667b07272/" target="_blank">
-          sarvesh-bamane
-        </a>
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-
-        <div class="footer">
-            <footer>
-                <p>© <span id="footer-year"></span> Sarvesh Ganesh Bamane. All rights reserved.</p>
-            </footer>
+          </div>
         </div>
       </div>
-<script src="app.js">
- 
-</script>
 
-    </body>
+      <div class="skills-category" id="web-development">
+        <h2> Frameworks & Libraries</h2>
+        <div class="skill-icons">
+          <div class="skill-icons">
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/spring.png" alt="Spring">
+                </div>
+                <div class="skill-back">Spring</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/spring.jpg" alt="Spring Boot">
+                </div>
+                <div class="skill-back">Spring Boot</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/hibernate.png" alt="Hibernate">
+                </div>
+                <div class="skill-back">Hibernate</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/angular.jpg" alt="Angular">
+                </div>
+                <div class="skill-back">Angular</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/react.jpg" alt="React">
+                </div>
+                <div class="skill-back">React</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/tailwind.jpg" alt="Tailwind CSS">
+                </div>
+                <div class="skill-back">Tailwind CSS</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/bootstrap.jpg" alt="Bootstrap">
+                </div>
+                <div class="skill-back">Bootstrap</div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-category" id="database-skills">
+        <h2>Tools / Platforms</h2>
+        <div class="skill-icons">
+          <div class="skill-icons">
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/eclipse.jpg" alt="Eclipse IDE">
+                </div>
+                <div class="skill-back">Eclipse IDE</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/vscode.jpg" alt="Visual Studio Code">
+                </div>
+                <div class="skill-back">VS Code</div>
+              </div>
+            </div>
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/mysqlbench.jpg" alt="MySQL Workbench">
+                </div>
+                <div class="skill-back">MySQL Workbench</div>
+              </div>
+            </div>
+
+
+
+            <div class="skill-flip">
+              <div class="skill-flip-inner">
+                <div class="skill-front">
+                  <img src="Assets/POSTMAN.jpg" alt="Postman">
+                </div>
+                <div class="skill-back">Postman</div>
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+
+      <div class="skills-category" id="database-skills">
+        <h2>Version Control</h2>
+        <div class="skill-icons">
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/git.jpg" alt="Git">
+              </div>
+              <div class="skill-back">Git</div>
+            </div>
+          </div>
+
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/github.jpg" alt="GitHub">
+              </div>
+              <div class="skill-back">GitHub</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-category" id="database-skills">
+        <h2>Web Development</h2>
+        <div class="skill-icons">
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/html.jpg" alt="HTML5">
+              </div>
+              <div class="skill-back">HTML5</div>
+            </div>
+          </div>
+
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/css.jpg" alt="CSS3">
+              </div>
+              <div class="skill-back">CSS3</div>
+            </div>
+          </div>
+
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/rsd.png" alt="Responsive Web Design">
+              </div>
+              <div class="skill-back">Responsive Design</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="skills-category" id="database-skills">
+        <h2>Database</h2>
+        <div class="skill-icons">
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/MYSQL.jpg" alt="SQL">
+              </div>
+              <div class="skill-back">SQL</div>
+            </div>
+          </div>
+
+          <div class="skill-flip">
+            <div class="skill-flip-inner">
+              <div class="skill-front">
+                <img src="Assets/mongo.jpg" alt="MongoDB">
+              </div>
+              <div class="skill-back">MongoDB</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="project-section section-3d" id="projects">
+      <div class="head">
+        <h1 id="projectH1" style="text-align: center; padding-top: 4rem ; margin-bottom: 2rem;"> <span style=" color: #00c4c4">Projects</span></h1>
+      </div>
+
+
+      <div class="myProjects">
+
+        <div class="projectsCard flip-card">
+
+          <div class="flip-inner">
+
+            <!-- FRONT -->
+            <div class="flip-front">
+              <img src="Assets/hospicare.png" alt="HospiCare">
+              <p>HospiCare</p>
+
+
+            </div>
+
+            <!-- BACK -->
+            <div class="flip-back">
+              <h3>HospiCare</h3>
+              <p>
+                HospiCare is a full-stack Hospital Management System built with Spring Boot, Angular, and MySQL to
+                manage patients, doctors, and appointments using REST APIs, layered architecture, and a responsive UI.
+              </p>
+              <a href="https://github.com/SarveshGBamane/HospiCare" target="_blank">
+                Checkout
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="projectsCard flip-card">
+          <div class="flip-inner">
+
+            <div class="flip-front">
+              <img src="Assets/image.png" alt="AutoRegistryPro">
+              <p>AutoRegistryPro</p>
+            </div>
+
+            <div class="flip-back">
+              <h3>AutoRegistryPro</h3>
+              <p>
+                AutoRegistryPro is a Java console app for managing vehicle records. It supports register, update, view,
+                and delete operations using Java, JDBC, and MySQL for efficient CRUD handling.
+              </p>
+              <a href="https://github.com/SarveshGBamane/AutoRegistryPro" target="_blank">
+                Checkout
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="projectsCard flip-card">
+          <div class="flip-inner">
+
+            <div class="flip-front">
+              <img src="Assets/505.png" alt="505 Camphor Website">
+              <p>505 Camphor Website</p>
+            </div>
+
+            <div class="flip-back">
+              <h3>505 Camphor Website</h3>
+              <p>
+                505camphor.com is a modern business website built with React, showcasing camphor-based products with
+                fast performance, responsive UI, smooth navigation, and a clean, user-friendly design.
+              </p>
+              <a href="https://505camphor.com/" target="_blank">
+                Checkout
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="projectsCard flip-card">
+          <div class="flip-inner">
+
+            <div class="flip-front">
+              <img src="Assets/BMS.png" alt="Bank Management System">
+              <p>Bank Management System</p>
+
+            </div>
+
+            <div class="flip-back">
+              <h3>Bank Management System</h3>
+              <p>
+                Bank Management System (Java) – Console-based Java app simulating core banking operations like account
+                creation, deposit, withdrawal & balance check using OOP, interfaces, exception handling, and a
+                menu-driven UI.
+              </p>
+              <a href="https://github.com/SarveshGBamane/Bank-Management-System" target="_blank">
+                Checkout
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="projectsCard flip-card">
+          <div class="flip-inner">
+
+            <div class="flip-front">
+              <img src="Assets/Expense.png" alt="Expense Tracker">
+              <p>Expense Tracker</p>
+            </div>
+
+            <div class="flip-back">
+              <h3>Expense Tracker</h3>
+              <p>
+                A responsive Expense Tracker built with HTML, CSS, and JavaScript. It lets users add income and
+                expenses, view balance updates, delete transactions, and stores data in localStorage for persistence.
+              </p>
+              <a href="https://expense-tracker-tgv8.vercel.app/" target="_blank">
+                Checkout
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="internships-section section-3d" id="internships">
+      <div class="head">
+        <h1 id="internshipH1" style="text-align: center; padding-top: 8rem ; margin-bottom: 2rem;"><span style=" color: #00c4c4">Internships</span></h1>
+      </div>
+      <div class="internship">
+
+        <div class="card">
+          <i class="fa-brands fa-java"></i>
+          <h3>Java Full Stack Developer Virtual Internship</h3>
+
+          <p id="internShipProvider">
+            Supported by AICTE & EduSkills (July – September 2025)
+          </p>
+
+          <p>
+            Successfully completed a 10-week Java Full Stack Developer virtual internship.
+            Gained hands-on experience in Core Java, OOP concepts, JDBC, Spring Boot,
+            RESTful APIs, MySQL, and front-end technologies.
+          </p>
+
+          <button id="internshipBtn1">View Certificate</button>
+        </div>
+
+        <div class="card">
+          <i class="fa-solid fa-laptop-code"></i>
+          <h3>Web Full Stack Developer Virtual Internship</h3>
+          <p id="intenShipProvider">Supported by AICTE and EduSkills (April – June 2025)</p>
+          <p>
+            Successfully completed a 10-week internship focusing on web development.
+            Learned full-stack concepts including front-end, back-end, and database
+            integration. Worked on real-world projects to build scalable web applications.
+          </p>
+          <button id="internshipBtn2"> View Certificate</button>
+        </div>
+
+
+
+        <div class="card">
+          <i class="fa-brands fa-java"></i>
+          <h3>Full Stack Java Developer Training and Internship</h3>
+
+          <p id="internShipProvider">
+            Adhyayan IT Training & Placement (Ongoing)
+          </p>
+
+          <p>
+            Currently pursuing Full Stack Java Developer training along with a virtual internship,
+            gaining hands-on experience in Core Java, Spring Boot, REST APIs, MySQL, and front-end technologies.
+          </p>
+
+
+          <button id="internshipBtn1"> View Certificate</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section section-3d" id="contact">
+      <div class="contact-heading">
+        <h1>Contact<span> Me</span></h1>
+      </div>
+
+      <div class="contact-card">
+
+        <!-- Phone -->
+        <div class="contact-item">
+          <a href="tel:+919511776714">
+            <i class="fa-solid fa-phone"></i>
+            <span>+91-9511776714</span>
+          </a>
+        </div>
+
+        <!-- WhatsApp -->
+        <div class="contact-item">
+          <a href="https://wa.me/919511776714?text=Hello%20Sarvesh!" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Email -->
+        <div class="contact-item">
+          <a
+            href="mailto:sarveshbamane35@gmail.com?subject=Hello%20Sarvesh&body=I%20would%20like%20to%20connect%20with%20you.">
+            <i class="fa-solid fa-envelope"></i>
+            <span>sarveshbamane35@gmail.com</span>
+          </a>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-item">
+          <a href="https://www.linkedin.com/in/sarvesh-bamane-667b07272/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <span> sarvesh-bamane</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+
+
+  </div>
+  </div>
+
+
+
+
+  <div class="footer">
+    <footer>
+      <p class="antic-regular">© <span id="footer-year"></span> Sarvesh Ganesh Bamane. All rights reserved.</p>
+    </footer>
+  </div>
+  </div>
+  <script src="app.js">
+
+
+  </script>
+
+</body>
 
 </html>
